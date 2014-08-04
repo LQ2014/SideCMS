@@ -5,6 +5,8 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/cms.src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/utils.src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/test.src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/const.src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/config"/>
         <property name="context-root" value="cms"/>
         <property name="java-output-path" value="/SideCMS/build/classes"/>
     </wb-module>

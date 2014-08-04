@@ -10,13 +10,12 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <servlet>
-  	<servlet-name>initServlet</servlet-name>
-  	<servlet-class>com.side.servlet.InitServlet</servlet-class>
-  	<init-param>
-  		<param-name>pkgs</param-name>
-  		<param-value>com.side.action</param-value>
-  	</init-param>
-  	<load-on-startup>0</load-on-startup>
-  </servlet>
+  <filter>
+  	<filter-name>sideFilter</filter-name>
+  	<filter-class>com.side.filter.SideFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>sideFilter</filter-name>
+  	<url-pattern>*</url-pattern>
+  </filter-mapping>
 </web-app>
